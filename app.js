@@ -45,10 +45,10 @@ calcBtn.addEventListener("click", function (e) {
     alert("You can't leave fields empty");
   }
   if (yourName.value == "") {
-    alert("Please Enter Your Name");
+    alert("Syötä sinun nimesi");
   }
   if (theirName.value == "") {
-    alert("Please Enter His/Her Name");
+    alert("Syötä hänen nimensä");
   }
 
   //lovescore conditions
@@ -57,104 +57,100 @@ calcBtn.addEventListener("click", function (e) {
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like Oil & Water. I'm sorry, but this is not enough for a perfect relationship.";
+      " Huonolta näyttää, kymmenyksen verran rakastatte. Saattaa crushi jo jättää, parempi mennä itse maate.";
   } else if (loveScore <= 20) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like Bird & Sky. But need to put a little concentration on your love.";
+      " Kevyttä intoa, pieni kipinä yössä. Rakkautta löytyy, mutta silti vähän syrjässä.";
   } else if (loveScore <= 30) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like Soil & Seed. You should take care of your love more! ";
+      " Ei paras mut’ ei huono, kolmanneksen yli tai alle. Rakastatte silti, yhteiselle taivasalle.";
   } else if (loveScore <= 40) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like Romeo & Juliet. There is no fake things in your love. Go Ahead!";
+      " Löytyy jo Hellusta, parit uudet. Teillä yhdessä, suuret mahdollisuudet.";
   } else if (loveScore <= 50) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like Marie & Pierre Curie. That's a good combination. You are a good example of true love.";
+      " Puolimatkas’ tai enemmän, ystävyyteenne lempeemmän. Kysy rakkautes ulos, ja kerro hieno tulos.";
   } else if (loveScore <= 60) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like The Earth & The Moon. You cannot live without each other.";
+      " rakastavat toisiaan kuin maapallo ja kuu, jotka vetävät toisiaan yhteen.";
   } else if (loveScore <= 70) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like River & Sea. Spread Love, not Hate.";
+      " sopivat yhteen kuin Ikea ja lihapullat.";
   } else if (loveScore <= 80) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other like glue. Nothing can seperate you from each other. Love is Forever.";
+      " ovat yhteensopivia kuin Erikeeper ja kuvisluokka.";
   } else if (loveScore <= 90) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
+      "<b>Sinä</b> ja " +
       "<b>" +
       capitalize_Words(theirName.value) +
       "</b>" +
-      " love each other more than anything in the world! You are the best example of true love.";
+      " ne yhteen sopii. Huomenna mennään pussauskoppiin. Sieltä kuuluu riks raks.";
   } else if (loveScore <= 100) {
     yourlovescoreis.innerHTML = "Your Love Score is";
     love();
     reloadBtn.style.display = "block";
     loveInfo.innerHTML =
-      "<b>You</b> and " +
-      "<b>" +
-      capitalize_Words(theirName.value) +
-      "</b>" +
-      " love each other like Ertuğrul Gazi & Halime Sultan. You should get married with " +
-      "<b>" +
-      capitalize_Words(theirName.value) +
-      "</b>" +
-      " very soon. Best of Luck!";
+    "<b>Sinä</b> ja " +
+    "<b>" +
+    capitalize_Words(theirName.value) +
+    "</b>" +
+    " sopivat yhteen kuin Tuhkimo ja lasikenkä.";
   }
 });
